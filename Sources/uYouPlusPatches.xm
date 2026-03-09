@@ -22,10 +22,10 @@
 // Workaround for MiRO92/uYou-for-YouTube#12, qnblackcat/uYouPlus#263
 %hook YTDataUtils
 + (NSMutableDictionary *)spamSignalsDictionary {
-    return nil;
+    return [NSMutableDictionary dictionary];
 }
 + (NSMutableDictionary *)spamSignalsDictionaryWithoutIDFA {
-    return nil;
+    return [NSMutableDictionary dictionary];
 }
 %end
 
